@@ -1,0 +1,10 @@
+.filter_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+button {
+  border: none;
+  background-color: inherit;
+}
