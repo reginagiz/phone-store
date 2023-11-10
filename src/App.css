@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #fff;
+}
+
+.App {
+  font-size: 14px;
+  min-height: 100vh;
+  min-width: 352px;
+}
+.primary_button {
+  background-color: #798fff;
+  display: flex;
+  padding: 14px 32px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 8px;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  width: fit-content;
+}
+.secondary_button {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  display: flex;
+  padding: 14px 32px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #ebecf2;
+  background: #fff;
+  color: #798fff;
+  width: fit-content;
+}
+
+@media (1024px <= width) {
+  .App {
+    font-size: 16px;
+  }
+}
