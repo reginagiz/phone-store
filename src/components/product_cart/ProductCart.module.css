@@ -1,0 +1,75 @@
+.product_cart {
+  display: flex;
+  justify-content: flex-start;
+}
+.colors_container {
+  display: flex;
+  margin-top: 1rem;
+}
+.colors_container div {
+  margin-right: 8px;
+}
+.general_info,
+.price_cart {
+  padding: 1rem 0;
+}
+.info_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.general_info {
+  display: flex;
+  text-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.price_cart {
+  text-wrap: nowrap;
+  text-align: end;
+}
+.price_cart h3 {
+  margin-bottom: 1rem;
+}
+.image_container {
+  width: 16.5rem;
+  height: 16.5rem;
+  margin-right: 2rem;
+  flex-shrink: 0;
+}
+.image_container img {
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+}
+hr {
+  background: #ebecf2;
+  height: 2px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+}
+a {
+  text-decoration: none;
+}
+.phoneColor {
+  width: 24px;
+  height: 24px;
+  border-radius: 32px;
+}
+.blackPhone {
+  background: #14161f;
+}
+.bluePhone {
+  background: #798fff;
+}
+.greenPhone {
+  background: #27ae60;
+}
+.purplePhone {
+  background: #9b51e0;
+}
+.whitePhone {
+  background: #fff;
+  border: 1px solid #ebecf2;
+}
