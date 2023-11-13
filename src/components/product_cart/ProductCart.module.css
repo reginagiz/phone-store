@@ -73,3 +73,18 @@ a {
   background: #fff;
   border: 1px solid #ebecf2;
 }
+@media (width < 768px) {
+  .image_container {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+  .info_container {
+    flex-direction: column;
+  }
+  .sec_button {
+    display: none;
+  }
+  .price_cart {
+    text-align: start;
+  }
+}

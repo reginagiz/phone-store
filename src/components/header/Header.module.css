@@ -9,4 +9,31 @@
   align-items: center;
   min-width: 320px;
   padding: 0.5rem 2.5rem;
+  border-bottom: 1px solid #ebecf2;
+}
+.badge {
+  border-radius: 16px;
+  background: #798fff;
+  display: flex;
+  width: 16px;
+  height: 16px;
+  padding: 1px 2px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  margin-left: -0.5rem;
+  margin-top: -0.5rem;
+}
+.cart {
+  display: flex;
+}
+
+@media (width < 768px) {
+  .header_container {
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+  }
 }

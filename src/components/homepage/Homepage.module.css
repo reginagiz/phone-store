@@ -30,4 +30,14 @@
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
+  margin-right: 2rem;
+}
+
+@media (width < 768px) {
+  .homepage_container {
+    padding: 1.5rem 1rem;
+  }
+  .navbar_container {
+    display: none;
+  }
 }
