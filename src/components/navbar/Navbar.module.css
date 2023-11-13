@@ -2,22 +2,46 @@
   width: 24px;
   height: 24px;
   border-radius: 32px;
+  border: none;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .blackPhone {
   background: #14161f;
 }
+.blackPhoneActive {
+  background: #14161f;
+  background-image: url("../images/Chevron.svg");
+}
 .bluePhone {
   background: #798fff;
+}
+.bluePhoneActive {
+  background: #798fff;
+  background-image: url("../images/Chevron.svg");
 }
 .greenPhone {
   background: #27ae60;
 }
+.greenPhoneActive {
+  background: #27ae60;
+  background-image: url("../images/Chevron.svg");
+}
 .purplePhone {
   background: #9b51e0;
+}
+.purplePhoneActive {
+  background: #9b51e0;
+  background-image: url("../images/Chevron.svg");
 }
 .whitePhone {
   background: #fff;
   border: 1px solid #ebecf2;
+}
+.whitePhoneActive {
+  background: #fff;
+  border: 1px solid #ebecf2;
+  background-image: url("../images/Chevron.svg");
 }
 .color_filter_container {
   display: flex;
@@ -27,7 +51,28 @@
   display: flex;
   padding: 8px;
   align-items: center;
+  margin-left: -8px;
+}
+.button_color_container:hover {
+  border-radius: 20px;
+  background: #ebecf2;
 }
 .button_color_container div {
   margin-left: 12px;
+}
+.color_filter_container h3 {
+  margin-bottom: 24px;
+}
+.reset_button {
+  display: flex;
+  padding: 5px 4px;
+  justify-content: center;
+  align-items: center;
+  color: #a3a7bf;
+  background-color: inherit;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+  margin-top: 24px;
 }
