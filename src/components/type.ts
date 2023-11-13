@@ -8,3 +8,8 @@ export type Phone = {
   desc: string;
 };
 export type Phones = Phone[];
+
+export type CartItem = {
+  product: Phone;
+  quantity: number;
+};

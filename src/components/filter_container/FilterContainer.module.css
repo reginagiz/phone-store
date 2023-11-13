@@ -1,10 +1,61 @@
+.filter {
+  min-width: 100%;
+}
 .filter_container {
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 32px;
+  min-width: 320px;
+  max-width: 42.3rem;
+  margin-bottom: 1rem;
 }
-button {
+.buttons_container {
+  display: flex;
+}
+.button_popular,
+.button_price {
+  background-color: inherit;
+  border: none;
+  display: flex;
+  padding: 5px 4px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+.button_popular {
+  margin-right: 2rem;
+  color: #a3a7bf;
+}
+.button_price {
+  color: #798fff;
+}
+.button_price_p {
+  margin-right: 8px;
+}
+.title_button {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar_menu {
   border: none;
   background-color: inherit;
+}
+@media (width < 768px) {
+  .filter_container {
+    flex-direction: column;
+  }
+  .buttons_container {
+    margin-top: 8px;
+  }
+}
+@media (768px <= width <= 1024px) {
+  .navbar_menu {
+    display: none;
+  }
+}
+
+@media (1024px <= width) {
+  .navbar_menu {
+    display: none;
+  }
 }

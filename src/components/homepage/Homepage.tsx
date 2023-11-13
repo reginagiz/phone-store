@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { observer } from "mobx-react-lite";
 import store from "../../store/GetAllProducts";
 import { Phone } from "../type";
@@ -11,14 +11,13 @@ const Homepage: React.FC = observer(() => {
   useEffect(() => {
     store.fetchData();
   }, []);
-  const [selectedColors, setSelectedColors] = useState<string[]>([]);
 
-  const filteredData = store.data.filter((item: Phone) => {
-    return (
-      selectedColors.length === 0 ||
-      item.colors.some((color) => selectedColors.includes(color))
+  let filteredData = store.data;
+  if (store.selectedColors.length > 0) {
+    filteredData = store.data.filter((item) =>
+      item.colors.some((color) => store.selectedColors.includes(color))
     );
-  });
+  }
 
   return (
     <div className={s.homepage}>
@@ -26,10 +25,7 @@ const Homepage: React.FC = observer(() => {
         <FilterContainer />
         <div className={s.navbar_plus_products_container}>
           <div className={s.navbar_container}>
-            <Navbar
-              selectedColors={selectedColors}
-              setSelectedColors={setSelectedColors}
-            />
+            <Navbar />
           </div>
           <div className={s.products_container}>
             {filteredData.map((item: Phone) => (

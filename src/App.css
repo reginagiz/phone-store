@@ -15,6 +15,7 @@ body {
 }
 .primary_button {
   background-color: #798fff;
+  border: none;
   display: flex;
   padding: 14px 32px;
   justify-content: center;
@@ -43,6 +44,9 @@ body {
   background: #fff;
   color: #798fff;
   width: fit-content;
+}
+a {
+  color: inherit;
 }
 
 @media (1024px <= width) {

@@ -3,6 +3,9 @@ import { observer } from "mobx-react-lite";
 import product from "../../store/GetProduct";
 import s from "./ProductDetails.module.css";
 import { useParams, useNavigate } from "react-router-dom";
+import { Phone } from "../type";
+import cartStore from "../../store/CartStore";
+import BackIcon from "../images/BackIcon";
 
 const ProductDetails: React.FC = observer(() => {
   const { id } = useParams();
@@ -14,6 +17,10 @@ const ProductDetails: React.FC = observer(() => {
 
   const handleClick = () => {
     navigate(-1);
+  };
+
+  const handleAddToCart = (product: Phone) => {
+    cartStore.addToCart(product);
   };
 
   const colorClassMap = {
@@ -34,7 +41,10 @@ const ProductDetails: React.FC = observer(() => {
   return (
     <div className={s.product_details}>
       <div className={s.button_container}>
-        <button onClick={handleClick}>{"<"} Назад</button>
+        <button onClick={handleClick}>
+          <BackIcon />
+          <div>Назад</div>
+        </button>
       </div>
       <div className={s.product_details_container}>
         <div className={s.img_container}>
@@ -57,7 +67,12 @@ const ProductDetails: React.FC = observer(() => {
             </div>
             <div className={s.price_cart}>
               <h1>{product.data.price} ₽</h1>
-              <button className="primary_button">В корзину</button>
+              <button
+                className="primary_button"
+                onClick={() => handleAddToCart(product.data)}
+              >
+                В корзину
+              </button>
             </div>
           </div>
           <h3>Описание</h3>

@@ -9,15 +9,21 @@
   padding: 2rem 2.5rem;
 }
 .button_container {
-  align-items: flex-start;
+  display: flex;
   min-width: 320px;
   padding: 2rem 2.5rem 0 2.5rem;
 }
 .button_container button {
   color: #a3a7bf;
   font-size: 16px;
+  border: none;
+  background-color: inherit;
+  display: flex;
+  align-items: center;
 }
-
+.button_container button div {
+  margin-left: 8px;
+}
 .img_container {
   width: 29rem;
   height: 29rem;
@@ -93,6 +99,10 @@
     padding: 0 1rem;
     font-size: 14px;
   }
+  .button_container {
+    padding: 1rem 1rem;
+  }
+
   .img_container {
     width: 20rem;
     height: 20rem;
